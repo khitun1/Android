@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Lab5</string>
+    <string name="input">Input text</string>
+    <string name="copy">Copy</string>
+    <string name="close">Close</string>
+    <string name="show">Show</string>
+    <string name="allow">Allow</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="equal">=</string>
+    <string name="input1">Input first variable</string>
+    <string name="input2">Input second variable</string>
 </resources>
