@@ -17,27 +17,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         enableEdgeToEdge()
-        setContentView(R.layout.task1)
+        setContentView(R.layout.task3)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//        val var1: EditText = findViewById(R.id.var1)
-//        val var2: EditText = findViewById(R.id.var2)
-//        val operand: TextView = findViewById(R.id.operand)
-//        val equal: TextView = findViewById(R.id.equal)
-//        val result: TextView = findViewById(R.id.result)
-//        var1.addTextChangedListener {
-//            equal.visibility = View.INVISIBLE
-//            operand.text = ""
-//            result.text = ""
-//        }
-//        var2.addTextChangedListener {
-//            equal.visibility = View.INVISIBLE
-//            operand.text = ""
-//            result.text = ""
-//        }
+       val var1: EditText = findViewById(R.id.var1)
+       val var2: EditText = findViewById(R.id.var2)
+       val operand: TextView = findViewById(R.id.operand)
+       val equal: TextView = findViewById(R.id.equal)
+       val result: TextView = findViewById(R.id.result)
+       var1.addTextChangedListener {
+           equal.visibility = View.INVISIBLE
+           operand.text = ""
+           result.text = ""
+       }
+       var2.addTextChangedListener {
+           equal.visibility = View.INVISIBLE
+           operand.text = ""
+           result.text = ""
+       }
     }
 
     fun onClickCopy(view: View?) {
